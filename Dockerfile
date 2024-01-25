@@ -11,7 +11,7 @@ COPY Gemfile /docker_test_blog_app2/Gemfile
 COPY Gemfile.lock /docker_test_blog_app2/Gemfile.lock
 RUN bundle install
 COPY . /docker_test_blog_app2
- 
+#
 # コンテナ起動時に毎回実行する
 COPY entrypoint.sh /usr/bin/
 RUN chmod +x /usr/bin/entrypoint.sh
